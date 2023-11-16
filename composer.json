@@ -17,7 +17,7 @@
             "email": "ren3016@qq.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {},
     "require-dev": {},
     "autoload": {
