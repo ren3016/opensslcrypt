@@ -6,6 +6,11 @@
         "ssl crypt"
     ],
     "license": "MIT",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/ren3016/opensslcrypt.git",
+        "reference": "6530a09c0c4964c01c9e5e6c4948e8bb24ebab88"
+    },
     "authors": [
         {
             "name": "ren3016",
@@ -13,11 +18,8 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {
-        "php": ">=5.4.0"
-    },
-    "require-dev": {
-    },
+    "require": {},
+    "require-dev": {},
     "autoload": {
         "psr-4": {
             "ren3016\\opensslcrypt\\": "src"
