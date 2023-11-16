@@ -1,0 +1,19 @@
+{
+    "name": "ren3016/opensslcrypt",
+    "description": "PHP SSL crypt class",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ren3016\\Opensslcrypt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ren3016",
+            "email": "ren3016@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
