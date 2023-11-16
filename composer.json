@@ -1,8 +1,19 @@
 {
     "name": "ren3016/opensslcrypt",
+    "version": "v1.0.1",
     "description": "PHP SSL crypt class",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "ren3016",
+            "email": "ren3016@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    },
     "autoload": {
         "psr-4": {
             "ren3016\\Opensslcrypt\\": "src/"
@@ -12,13 +23,5 @@
         "psr-4": {
             "tests\\": "tests"
         }
-    },
-    "authors": [
-        {
-            "name": "ren3016",
-            "email": "ren3016@qq.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+    }
 }
