@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ren3016\\Opensslcrypt\\": "src/"
+            "ren3016\\Opensslcrypt\\": "src/"
         }
     },
     "autoload-dev": {
