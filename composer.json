@@ -8,12 +8,17 @@
             "Ren3016\\Opensslcrypt\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "ren3016",
             "email": "ren3016@qq.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
