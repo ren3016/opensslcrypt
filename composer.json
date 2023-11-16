@@ -21,6 +21,7 @@
     "require": {},
     "require-dev": {},
     "autoload": {
+        "files": [],
         "psr-4": {
             "ren3016\\opensslcrypt\\": "src"
         }
