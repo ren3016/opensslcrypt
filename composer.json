@@ -1,8 +1,10 @@
 {
     "name": "ren3016/opensslcrypt",
-    "version": "v1.0.1",
-    "description": "PHP SSL crypt class",
-    "type": "library",
+    "description": "crypt加密组件包提供功能强大的加密功能",
+    "keywords": [
+        "ren3016",
+        "ssl crypt"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -11,18 +13,19 @@
         }
     ],
     "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+    },
     "autoload": {
         "psr-4": {
-            "ren3016\\opensslcrypt\\": "src/"
+            "ren3016\\opensslcrypt\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "tests\\": "tests"
         }
-    },
-    "require": {
-        "php": ">=5.4.0"
-    },
-    "require-dev": {}
+    }
 }
