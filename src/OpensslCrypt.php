@@ -1,9 +1,6 @@
 <?php
 
-if (!defined('IN_TG')) {
-    exit('Access decline');
-}
-
+namespace ren3016\opensslcrypt;
 /**
  * OpensslCrypt类 主要以openssl_encrypt加密解密数据，可用于涉密数据处理（如存储帐号密码等敏感数据时使用）
  * 类指定的$key秘钥字符串需要保密，无秘钥用户不能解密成原始数据
@@ -14,7 +11,7 @@ if (!defined('IN_TG')) {
 class OpensslCrypt
 {
     private $cipher_mode = 'AES-256-CBC'; // 密码方式
-    private $key = 'dream_3016_ren_yanshunlu'; // 秘钥字符串
+    private $key = 'dream_3016_secret_key'; // 秘钥字符串
     private $options = OPENSSL_RAW_DATA; // OPENSSL_RAW_DATA 只是告诉openssl_encrypt()将cipherText作为原始数据返回.默认情况下,它返回Base64编码.
 
     /**

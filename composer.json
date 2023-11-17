@@ -25,10 +25,5 @@
         "psr-4": {
             "ren3016\\opensslcrypt\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "tests\\": "tests"
-        }
-    }
+    }   
 }
