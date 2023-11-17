@@ -15,13 +15,9 @@
             "email": "ren3016@qq.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.4"
-    },
-    "require-dev": {},
+    "minimum-stability": "stable",
+    "require": {},
     "autoload": {
-        "files": [],
         "psr-4": {
             "ren3016\\opensslcrypt\\": "src"
         }
