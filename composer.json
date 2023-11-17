@@ -1,5 +1,6 @@
 {
     "name": "ren3016/opensslcrypt",
+    "version": "v1.0.3",
     "description": "crypt加密组件包提供功能强大的加密功能",
     "keywords": [
         "ren3016",
@@ -15,7 +16,7 @@
             "email": "ren3016@qq.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "require": {},
     "autoload": {
         "psr-4": {
