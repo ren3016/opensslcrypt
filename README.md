@@ -31,3 +31,7 @@ echo"Hello World! 加密后是： " . $crypt_str . "`<br><br>`\n\n";
 把加密字符串 解密为 字符串或数组，使用类方法 dec
 
 echo" 再解密后是： " . $crypt->dec($crypt_str);
+
+## 使用 demo.php 测试
+
+将 demo.php 文件复制到根目录 （和 vendor 平行的目录）中访问 demo.php 即可
