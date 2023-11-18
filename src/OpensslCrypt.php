@@ -1,20 +1,32 @@
 <?php
 
-namespace ren3016\opensslcrypt;
 /**
- * OpensslCrypt类 主要以openssl_encrypt加密解密数据，可用于涉密数据处理（如存储帐号密码等敏感数据时使用）
+ * ---------------------------------
+ * Author: dream <ren3016@qq.com>
+ * wechat: ren3016
+ * createtime: 2023-05-10
+ * ---------------------------------
+ * OpensslCrypt： 以openssl_encrypt加密解密数据
+ * ---------------------------------
+ * 可用于涉密数据存储写传输（如存储帐号密码等敏感数据时使用）
  * 类指定的$key秘钥字符串需要保密，无秘钥用户不能解密成原始数据
  * 同一字符，每次生成的秘钥不同
  * 使用方式：加密：$cry = new OpensslCrypt();   $aaa = $cry->enc('中国');
  * 解密：$cry = new OpensslCrypt();   $aaa = $cry->dec('B6_NRUXw_lrElQub4e842rYBxHJDtrEp4Jm6-q0IGIWXZ1WfCu20U46cWKtEvNtT80yOyZiomK-RANp5eV2N2g');
  */
+
+namespace ren3016\OpensslCrypt;
+
 class OpensslCrypt
 {
-    private $cipher_mode = 'AES-256-CBC'; // 密码方式
-    private $key = 'dream_3016_secret_key'; // 秘钥字符串
+    // 类属性 使用 private 修饰
+    private $cipher_mode = 'AES-256-CBC'; // 密码方式，AES-128-CBC时长度为16，为AES-256-CBC长度为32
+    private $key = 'dream_3016_secret_key'; // 秘钥字符串，加密和解密必须使用相同秘钥，否则不能解密
     private $options = OPENSSL_RAW_DATA; // OPENSSL_RAW_DATA 只是告诉openssl_encrypt()将cipherText作为原始数据返回.默认情况下,它返回Base64编码.
 
     /**
+     * 加密
+     * 类方法 使用 public 修饰
      * enc 对传入字符串或数组进行openssl_encrypt加密
      * @param string $text_str 要加密的字符串
      * @return string|false 加密成功返回字符串，失败返回false
@@ -44,6 +56,8 @@ class OpensslCrypt
     }
 
     /**
+     * 解密
+     * 类方法 使用 public 修饰
      * dec 解密由enc生成的秘钥
      * @param string $secret_str 经过enc加密的字符串。
      * @param int $chk_expt_dmf 默认为0，并且返回是数组：就验证过期时间及域名，其它不验证
