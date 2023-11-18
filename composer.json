@@ -1,5 +1,6 @@
 {
     "name": "ren3016/opensslcrypt",
+    "version": "v1.1.3",
     "description": "open ssl crypt加密组件包提供加密解密功能",
     "keywords": [
         "ren3016",
