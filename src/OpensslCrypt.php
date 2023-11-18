@@ -15,7 +15,7 @@
  * 解密：$cry = new OpenSslCrypt();   $aaa = $cry->dec('B6_NRUXw_lrElQub4e842rYBxHJDtrEp4Jm6-q0IGIWXZ1WfCu20U46cWKtEvNtT80yOyZiomK-RANp5eV2N2g');
  */
 
-namespace Ren3016\Opensslcrypt;
+namespace ren3016\opensslcrypt;
 
 class OpenSslCrypt
 {

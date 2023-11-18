@@ -19,7 +19,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Ren3016\\Opensslcrypt\\": "src"
+            "ren3016\\opensslcrypt\\": "src"
         }
     }   
 }
