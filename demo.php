@@ -5,12 +5,12 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include "vendor/autoload.php"; // composer自动加载
-// include_once "src/opensslcrypt.php";  // 直接引用文件
+// include_once "src/OpenSslCrypt.php";  // 直接引用文件
 
-use ren3016\opensslcrypt\OpenSSLCrypt;
+use ren3016\OpenSslCrypt\OpenSslCrypt;
 
 // 实例化类，创建 $crypt 对象
-$crypt = new OpenSSLCrypt();
+$crypt = new OpenSslCrypt();
 
 // 使用类方法 enc 进行 字符串或数组 加密
 $crypt_str = $crypt->enc("Hello World!");

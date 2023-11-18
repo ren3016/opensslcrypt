@@ -6,18 +6,18 @@
  * wechat: ren3016
  * createtime: 2023-05-10
  * ---------------------------------
- * OpensslCrypt： 以openssl_encrypt加密解密数据
+ * OpenSslCrypt： 以openssl_encrypt加密解密数据
  * ---------------------------------
  * 可用于涉密数据存储写传输（如存储帐号密码等敏感数据时使用）
  * 类指定的$key秘钥字符串需要保密，无秘钥用户不能解密成原始数据
  * 同一字符，每次生成的秘钥不同
- * 使用方式：加密：$cry = new OpensslCrypt();   $aaa = $cry->enc('中国');
- * 解密：$cry = new OpensslCrypt();   $aaa = $cry->dec('B6_NRUXw_lrElQub4e842rYBxHJDtrEp4Jm6-q0IGIWXZ1WfCu20U46cWKtEvNtT80yOyZiomK-RANp5eV2N2g');
+ * 使用方式：加密：$cry = new OpenSslCrypt();   $aaa = $cry->enc('中国');
+ * 解密：$cry = new OpenSslCrypt();   $aaa = $cry->dec('B6_NRUXw_lrElQub4e842rYBxHJDtrEp4Jm6-q0IGIWXZ1WfCu20U46cWKtEvNtT80yOyZiomK-RANp5eV2N2g');
  */
 
-namespace ren3016\opensslcrypt;
+namespace ren3016\OpenSslCrypt;
 
-class OpensslCrypt
+class OpenSslCrypt
 {
     // 类属性 使用 private 修饰
     private $cipher_mode = 'AES-256-CBC'; // 密码方式，AES-128-CBC时长度为16，为AES-256-CBC长度为32

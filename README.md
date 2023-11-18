@@ -1,4 +1,4 @@
-# opensslcrypt 以openssl_encrypt加密解密数据
+# OpenSslCrypt 以openssl_encrypt加密解密数据
 
 ## 一、加载方式：
 
@@ -6,17 +6,17 @@
 
 include "vendor/autoload.php";
 
-use ren3016\opensslcrypt\OpenSSLCrypt;
+use ren3016\OpenSslCrypt\OpenSslCrypt;
 
 ### 1.2 引入文件
 
-include_once "src/opensslcrypt.php"
+include_once "src/OpenSslCrypt.php"
 
-use ren3016\\opensslcryptOpenSSLCrypt;
+use ren3016\\OpenSslCryptOpenSslCrypt;
 
 ## 二、实例化类，创建 $crypt 对象
 
-$crypt = new OpenSSLCrypt();
+$crypt = new OpenSslCrypt();
 
 ### 2.1 加密
 
