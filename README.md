@@ -6,13 +6,13 @@
 
 include "vendor/autoload.php";
 
-use Ren3016\\opensslcrypt\\OpenSslCrypt;
+use ren3016\\opensslcrypt\\OpenSslCrypt;
 
 ### 1.2 引入文件
 
 include_once "src/opensslcrypt.php"
 
-use Ren3016\\opensslcrypt\\OpenSslCrypt;
+use ren3016\\opensslcrypt\\OpenSslCrypt;
 
 ## 二、实例化类，创建 $crypt 对象
 
