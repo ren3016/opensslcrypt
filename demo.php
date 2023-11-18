@@ -5,9 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include "vendor/autoload.php"; // composer自动加载
-// include "src/OpensslCrypt.php";  // 直接引用文件
+// include_once "src/opensslcrypt.php";  // 直接引用文件
 
-use ren3016\OpensslCrypt\OpenSSLCrypt;
+use ren3016\opensslcrypt\OpenSSLCrypt;
 
 // 实例化类，创建 $crypt 对象
 $crypt = new OpenSSLCrypt();
